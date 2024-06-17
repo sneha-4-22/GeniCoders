@@ -41,7 +41,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #FFEFFC; /* Light pink background color */
+    background-color: #FFEFFC; 
     position: relative;
     overflow: hidden;
   }
