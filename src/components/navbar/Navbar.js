@@ -2,6 +2,7 @@ import React from 'react';
 import './Navbar.css';
 import logo from './logo.png'; 
 import { Link } from 'react-router-dom';
+import Dropdown from './Dropdown';
 const Navbar = () => {
   return (
     <nav className="navbar">
@@ -10,11 +11,11 @@ const Navbar = () => {
           <img src={logo} alt="Daisy Deals" />
         </Link>
       </div>
-      <ul className="nav-links">
-        <li><a href="#">MEN</a></li>
-        <li><a href="#">WOMEN</a></li>
-        <li><a href="#">FOOTWEAR</a></li>
-        <li><a href="#">BEAUTY</a></li>
+      <ul className="nav-links menu">
+      <Dropdown label="MEN" items={['T-Shirts', 'Jeans']} />
+      <Dropdown label="WOMEN" items={['Dresses', 'Tops']} />
+      <Dropdown label="FOOTWEAR" items={['Slippers', 'Shoes', 'Sandals']} />
+        <li><Link to="/beauty">BEAUTY</Link></li>
         <li><Link to="/accessories">ACCESSORIES</Link></li>
         <li><a href="#" className="new">STUDIO <span>NEW</span></a></li>
       </ul>
