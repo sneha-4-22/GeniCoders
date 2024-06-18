@@ -1,5 +1,5 @@
 import React from 'react';
-import './Accessories.css';
+
 import s1 from '../../images/sandles/s1.png'; 
 import s2 from '../../images/sandles/s2.png';
 import s3 from '../../images/sandles/s3.png';
@@ -24,7 +24,7 @@ const sandles = [
   { id: 10, name: 'Accessory 10', image: s10 },
 ];
 
-const Accessories = () => {
+const Sandles = () => {
   return (
     <div className="accessories-container">
       <h2>SANDLES</h2>
@@ -40,4 +40,4 @@ const Accessories = () => {
   );
 }
 
-export default Accessories;
+export default Sandles;
