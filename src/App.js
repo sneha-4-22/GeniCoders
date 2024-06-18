@@ -4,6 +4,7 @@ import LoadingScreen from './components/LoadingScreen/LoadingScreen';
 import HomePage from './components/Home/HomePage';
 import Accessories from './components/Accessories/Accessories';
 import Navbar from './components/navbar/Navbar';
+import Beauty from './components/Beauty/Beauty';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<LoadingScreen />} />
         <Route path="/home" element={<HomePage />} />
         <Route path="/accessories" element={<Accessories />} />
+        <Route path="/beauty" element={<Beauty />} />
       </Routes>
     </Router>
   );
