@@ -10,7 +10,7 @@ const LoadingScreen = () => {
       navigate('/home'); 
     }, 3500); 
 
-    return () => clearTimeout(timer); // Cleanup the timer if the component unmounts
+    return () => clearTimeout(timer); 
   }, [navigate]);
     return (
         <div className="loading-screen">
