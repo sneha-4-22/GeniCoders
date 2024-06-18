@@ -1,14 +1,13 @@
 import React from 'react';
 import './HomePage.css';
-import Navbar from './Navbar';
-import Footer from './Footer';
+import Footer from '../Footer/Footer';
 import heroImage from './freestocks-_3Q3tsJ01nc-unsplash.jpg'; 
 
 
 const HomePage = () => {
   return (
     <div className="home-page">
-      <Navbar />
+      
       <header className="hero-section" style={{ backgroundImage: `url(${heroImage})` }}>
         <div className="hero-content">
           <h1>Discover the Best Deals!</h1>
@@ -16,7 +15,7 @@ const HomePage = () => {
           <button className="shop-now-button">Shop Now</button>
         </div>
       </header>
-
+      
       <section className="categories-section">
         <h2>Shop by Category</h2>
         <div className="categories">
@@ -54,6 +53,7 @@ const HomePage = () => {
             <p>$45.00</p>
           </div>
         </div>
+
       </section>
 
       <Footer />

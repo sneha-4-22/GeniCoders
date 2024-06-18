@@ -1,0 +1,37 @@
+.accessories-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .accessories-container h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .accessories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .accessory-item {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+  
+  .accessory-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .accessory-item p {
+    margin: 10px 0;
+    font-size: 1.2em;
+  }
+  
+  .accessory-item:hover {
+    transform: scale(1.05);
+  }
+  
