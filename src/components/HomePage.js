@@ -1,37 +1,18 @@
 import React from 'react';
 import './HomePage.css';
-import logo from './logo.png'; // Make sure to use your logo image
+import Navbar from './Navbar';
+import Footer from './Footer';
+import heroImage from './freestocks-_3Q3tsJ01nc-unsplash.jpg'; 
+
 
 const HomePage = () => {
   return (
     <div className="home-page">
-      <nav className="navbar">
-        <div className="logo">
-          <img src={logo} alt="Daisy Deals" />
-        </div>
-        <ul className="nav-links">
-          <li><a href="#">MEN</a></li>
-          <li><a href="#">WOMEN</a></li>
-          <li><a href="#">KIDS</a></li>
-          <li><a href="#">HOME & LIVING</a></li>
-          <li><a href="#">BEAUTY</a></li>
-          <li><a href="#" className="new">STUDIO <span>NEW</span></a></li>
-        </ul>
-        <div className="nav-icons">
-          <div className="search-box">
-            <input type="text" placeholder="Search for products, brands and more" />
-            <button type="submit"><i className="fas fa-search"></i></button>
-          </div>
-          <a href="#"><i className="fas fa-user"></i> Profile</a>
-          <a href="#"><i className="fas fa-heart"></i> Wishlist</a>
-          <a href="#"><i className="fas fa-shopping-bag"></i> Bag</a>
-        </div>
-      </nav>
-
-      <header className="hero-section">
+      <Navbar />
+      <header className="hero-section" style={{ backgroundImage: `url(${heroImage})` }}>
         <div className="hero-content">
-          <h1>Welcome to Daisy Deals!</h1>
-          <p>Discover the best deals on your favorite products.</p>
+          <h1>Discover the Best Deals!</h1>
+          <p>Explore our latest collections and exclusive offers.</p>
           <button className="shop-now-button">Shop Now</button>
         </div>
       </header>
@@ -40,15 +21,15 @@ const HomePage = () => {
         <h2>Shop by Category</h2>
         <div className="categories">
           <div className="category">
-            <img src="category1.png" alt="Category 1" />
-            <p>Clothing</p>
+            <img src="../images/dresses/dress12.png" alt="Clothing" />
+            <p>Dresses</p>
           </div>
           <div className="category">
-            <img src="category2.png" alt="Category 2" />
+            <img src="category2.png" alt="Accessories" />
             <p>Accessories</p>
           </div>
           <div className="category">
-            <img src="category3.png" alt="Category 3" />
+            <img src="category3.png" alt="Beauty" />
             <p>Beauty</p>
           </div>
         </div>
@@ -75,9 +56,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <footer className="footer">
-        <p>&copy; 2024 Daisy Deals. All rights reserved.</p>
-      </footer>
+      <Footer />
     </div>
   );
 }
