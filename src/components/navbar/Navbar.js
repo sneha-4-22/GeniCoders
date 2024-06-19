@@ -12,7 +12,7 @@ const Navbar = () => {
         </Link>
       </div>
       <ul className="nav-links menu">
-      <Dropdown label="MEN" items={['T-Shirts', 'Jeans']} />
+      <Dropdown label="MEN" items={['Shirts', 'Jeans']} />
       <Dropdown label="WOMEN" items={['Dress', 'Tops']} />
       <Dropdown label="FOOTWEAR" items={['Slippers', 'Shoes', 'Sandal']} />
         <li><Link to="/beauty">BEAUTY</Link></li>
