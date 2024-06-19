@@ -14,7 +14,7 @@
   background-color: #fff;
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  z-index: 1000;
+  z-index: 900;
   border-radius: 10px;
   overflow-y: auto;
   transition: transform 0.3s ease;

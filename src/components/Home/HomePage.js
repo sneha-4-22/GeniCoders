@@ -1,23 +1,37 @@
-import React from 'react';
+import React, { useState }  from 'react';
 import './HomePage.css';
 import Footer from '../Footer/Footer';
-import heroImage from './freestocks-_3Q3tsJ01nc-unsplash.jpg'; 
+import heroImage1 from './banner3.png'; 
 import dressImage from '../../images/dresses/dress1.png';
 import accessoryImage from '../../images/Accessories/a12.png';
 import beautyImage from '../../images/beauty/b10.png';
 import product1 from '../../images/men/mc1.png';
 import product2 from '../../images/tshirts/top2.png';
 import product3 from '../../images/tshirts/top3.png';
+import heroImage2 from './banner2.png';
+import heroImage3 from './banner1.jpg';
 import { Link } from 'react-router-dom';
 const HomePage = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const slides = [heroImage1, heroImage2, heroImage3];
+
+  const handlePrevSlide = () => {
+    setCurrentSlide((prevSlide) => (prevSlide === 0 ? slides.length - 1 : prevSlide - 1));
+  };
+
+  const handleNextSlide = () => {
+    setCurrentSlide((prevSlide) => (prevSlide === slides.length - 1 ? 0 : prevSlide + 1));
+  };
   return (
     <div className="home-page">
-      <header className="hero-section" style={{ backgroundImage: `url(${heroImage})` }}>
+      <header className="hero-section" style={{ backgroundImage: `url(${slides[currentSlide]})` }}>
         <div className="hero-content">
           <h1>Discover Unbeatable Deals!</h1>
           <p>Step into the latest trends with our exclusive collections.</p>
           <button className="shop-now-button">Shop Now</button>
         </div>
+        <button className="prev-slide" onClick={handlePrevSlide}>&#8249;</button>
+        <button className="next-slide" onClick={handleNextSlide}>&#8250;</button>
       </header>
       
       <section className="categories-section">
