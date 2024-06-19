@@ -2,18 +2,18 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #FFEFFC; /* Matching the background color */
+    background-color: #FFEFFC; 
     color: #333;
   }
   .hero-section {
     display: flex;
-    align-items: center; /* Align items vertically centered */
+    align-items: center; 
     justify-content: flex-start; 
     height: 60vh;
     background-size: cover;
     background-position: center;
     color: #fff;
-    text-align: left; /* Align text to the left */
+    text-align: left;
     padding: 50px;
     position: relative;
   }
@@ -31,7 +31,7 @@ body {
   
   .hero-content {
     max-width: 600px;
-    z-index: 3; 
+    z-index: 1; 
   }
   
   .hero-content h1 {

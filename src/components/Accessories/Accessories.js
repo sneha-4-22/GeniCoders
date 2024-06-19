@@ -10,7 +10,7 @@ import accessory7 from '../../images/Accessories/a7.png';
 import accessory8 from '../../images/Accessories/a8.png';
 import accessory9 from '../../images/Accessories/a9.png';
 import accessory10 from '../../images/Accessories/a10.png';
-
+import accessory11 from '../../images/Accessories/a11.png';
 const accessories = [
   { id: 1, name: 'Accessory 1', image: accessory1 },
   { id: 2, name: 'Accessory 2', image: accessory2 },
@@ -22,6 +22,7 @@ const accessories = [
   { id: 8, name: 'Accessory 8', image: accessory8 },
   { id: 9, name: 'Accessory 9', image: accessory9 },
   { id: 10, name: 'Accessory 10', image: accessory10 },
+  { id: 10, name: 'Accessory 11', image: accessory11 },
 ];
 
 const Accessories = () => {
