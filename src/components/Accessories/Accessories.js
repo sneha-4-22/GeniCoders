@@ -11,19 +11,20 @@ import accessory8 from '../../images/Accessories/a8.png';
 import accessory9 from '../../images/Accessories/a9.png';
 import accessory10 from '../../images/Accessories/a10.png';
 import accessory11 from '../../images/Accessories/a11.png';
-
+import accessory12 from '../../images/Accessories/a12.png';
 const accessoriesData = [
-  { id: 1, name: 'Accessory 1', image: accessory1, price: 800, color: 'red', size: 'M', pattern: 'striped' },
-  { id: 2, name: 'Accessory 2', image: accessory2, price: 1500, color: 'blue', size: 'S', pattern: 'plain' },
-  { id: 3, name: 'Accessory 3', image: accessory3, price: 1125, color: 'green', size: 'L', pattern: 'polka dot' },
-  { id: 4, name: 'Accessory 4', image: accessory4, price: 2250, color: 'yellow', size: 'M', pattern: 'striped' },
-  { id: 5, name: 'Accessory 5', image: accessory5, price: 1875, color: 'pink', size: 'S', pattern: 'plain' },
-  { id: 6, name: 'Accessory 6', image: accessory6, price: 400, color: 'purple', size: 'L', pattern: 'polka dot' },
-  { id: 7, name: 'Accessory 7', image: accessory7, price: 2800, color: 'red', size: 'M', pattern: 'striped' },
-  { id: 8, name: 'Accessory 8', image: accessory8, price: 3000, color: 'blue', size: 'S', pattern: 'plain' },
-  { id: 9, name: 'Accessory 9', image: accessory9, price: 3750, color: 'green', size: 'L', pattern: 'polka dot' },
-  { id: 10, name: 'Accessory 10', image: accessory10, price: 3375, color: 'yellow', size: 'M', pattern: 'striped' },
-  { id: 11, name: 'Accessory 11', image: accessory11, price: 4125, color: 'pink', size: 'S', pattern: 'plain' },
+  { id: 1, name: 'Women\'s Square Frame Trendy Sunglasses With Chain Decor For Daily Life Beach Accessories', image: accessory1, price: 800, color: 'red', size: 'M', pattern: 'striped' },
+  { id: 2, name: '3pcs Girls Butterfly Charm Bracelet', image: accessory2, price: 1500, color: 'blue', size: 'S', pattern: 'plain' },
+  { id: 3, name: 'Set Of 14 Cute Hair Clips For Girls Hair Styling', image: accessory3, price: 1125, color: 'green', size: 'L', pattern: 'polka dot' },
+  { id: 4, name: 'Floral Bun Hair Ties For Women, Romantic Aesthetic Hair Scrunchies, Extra-Large Chiffon Scrunchy', image: accessory4, price: 2250, color: 'yellow', size: 'M', pattern: 'striped' },
+  { id: 5, name: 'Faux Pearl & Rhinestone Decor Star Drop Earrings', image: accessory5, price: 1875, color: 'pink', size: 'S', pattern: 'plain' },
+  { id: 6, name: 'White Beaded Acrylic Butterfly Elastic Hairpin For Women, Clear Glass Beaded', image: accessory6, price: 400, color: 'purple', size: 'L', pattern: 'polka dot' },
+  { id: 7, name: 'Luxury Zinc Alloy Faux Pearl & Rhinestone Decor Leaf Detail Chain Bracelet For Women For Daily Life', image: accessory7, price: 2800, color: 'red', size: 'M', pattern: 'striped' },
+  { id: 8, name: 'Butterfly Decor Cubic Zirconia Detail Ring', image: accessory8, price: 3000, color: 'blue', size: 'S', pattern: 'plain' },
+  { id: 9, name: 'Aeora S925 Silver Thirteen Hanging Pieces Bracelet for Women Gift Bracelets & Bangles JewelryMaterial', image: accessory9, price: 3750, color: 'green', size: 'L', pattern: 'polka dot' },
+  { id: 10, name: 'Faux Pearl Lily Of The Valley Flower Rhinestone Leaf Alloy Tassel Simple Decorative Ladies Headband', image: accessory10, price: 3375, color: 'yellow', size: 'M', pattern: 'striped' },
+  { id: 11, name: '1pc Cute Cartoon Flower Design Diamond Inlaid Bracelet For Women, Daily Wear, Birthday/Festival Gift', image: accessory11, price: 4125, color: 'pink', size: 'S', pattern: 'plain' },
+  { id: 12, name: 'silver tone metal leaves Gold filled wire or Sterling Silver wire Plated jewellery wire Plated ear wire hooks Handcrafted clay flowers in ivories or light blush Hoop ', image: accessory12, price: 2125, color: 'silver', size: 'S', pattern: 'plain' },
 ];
 
 const Accessories = () => {
