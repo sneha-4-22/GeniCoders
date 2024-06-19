@@ -10,6 +10,8 @@ import Tops from './components/Women/Tops';
 import Sandles from './components/Footwear/Sandles';
 import Shoes from './components/Footwear/Shoes';
 import Sleeper from './components/Footwear/Sleeper';
+import Tshirts from './components/Men/Tshirts';
+import Jeans from './components/Men/Jeans';
 function App() {
   return (
     <Router>
@@ -25,6 +27,9 @@ function App() {
           <Route path="/sandal" element={<Sandles />} />
           <Route path="/shoes" element={<Shoes />} />
           <Route path="/slippers" element={<Sleeper />} />
+          <Route path="/t-shirts" element={<Tshirts />} />
+          <Route path="/jeans" element={<Jeans/>} />
+
         </Route>
       </Routes>
     </Router>

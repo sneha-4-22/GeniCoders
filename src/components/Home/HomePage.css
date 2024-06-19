@@ -50,7 +50,32 @@ body {
     color: #FFF;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
   }
-  
+  .prev-slide,
+.next-slide {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 2rem;
+  z-index: 2;
+}
+
+.prev-slide {
+  left: 10px;
+}
+
+.next-slide {
+  right: 10px;
+}
+
+.prev-slide:hover,
+.next-slide:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
   .shop-now-button {
     padding: 15px 30px;
     background-color: #FF69B4;
