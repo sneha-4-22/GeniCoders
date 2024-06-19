@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-
+import { Link } from 'react-router-dom';
 const Dropdown = ({ label, items }) => {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
@@ -27,7 +27,9 @@ const Dropdown = ({ label, items }) => {
       {isOpen && (
         <div className="dropdown-content">
           {items.map((item, index) => (
-            <a key={index} href="#">{item}</a>
+            <Link key={index} to={`/${item.toLowerCase()}`} className="dropdown-item">
+              {item}
+            </Link>
           ))}
         </div>
       )}
