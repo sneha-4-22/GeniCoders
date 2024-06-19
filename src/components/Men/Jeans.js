@@ -14,12 +14,12 @@ import b6 from '../../images/jeans/j6.png';
 // import b12 from '../../images/tshirts/top12.png';
 
 const jeansData = [
-  { id: 1, name: 'Printed Pullover T-Shirt', image: b1, price: 800, color: 'red', size: 'M', pattern: 'striped' },
-  { id: 2, name: 'Solid Color Crop T-shirt 3 Pack, Casual Crew Neck Short Sleeve Top For Spring & Summer, Women\'s Clothing', image: b2, price: 1500, color: 'blue', size: 'S', pattern: 'plain' },
-  { id: 3, name: 'Ruffle Cami Top', image: b3, price: 1125, color: 'green', size: 'L', pattern: 'polka dot' },
-  { id: 4, name: 'Printed Pullover T-Shirt', image: b4, price: 2250, color: 'yellow', size: 'M', pattern: 'striped' },
-  { id: 5, name: 'Printed Pullover T-Shirt', image: b5, price: 1875, color: 'pink', size: 'S', pattern: 'plain' },
-  { id: 6, name: 'Applique Cami Top', image: b6, price: 400, color: 'purple', size: 'L', pattern: 'polka dot' },
+  { id: 1, name: 'Men\'s Straight Leg Jeans With Stone Wash', image: b1, price: 800, color: 'red', size: 'M', pattern: 'striped' },
+  { id: 2, name: 'Men Cat Whisker Straight Leg Jeans', image: b2, price: 1500, color: 'blue', size: 'S', pattern: 'plain' },
+  { id: 3, name: 'Elasticated Waist Relaxed Fit Buckle Cargo Trouser |', image: b3, price: 1125, color: 'green', size: 'L', pattern: 'polka dot' },
+  { id: 4, name: 'Mens Elastic Waist Relaxed Fit Buckle Cargo Jogger - Green - Xs', image: b4, price: 2250, color: 'yellow', size: 'M', pattern: 'striped' },
+  { id: 5, name: 'Mens Denim Parachute Jean - Blue - 28R - An absolute staple in every man\'s closet is a pair of these men\'s regular fit jeans, ', image: b5, price: 1875, color: 'pink', size: 'S', pattern: 'plain' },
+  { id: 6, name: 'Classic Faded Jeans ', image: b6, price: 400, color: 'purple', size: 'L', pattern: 'polka dot' },
 //   { id: 7, name: 'Belted Straight Leg Pants', image: b7, price: 2800, color: 'red', size: 'M', pattern: 'striped' },
 //   { id: 8, name: 'Applique Cami Top', image: b8, price: 3000, color: 'blue', size: 'S', pattern: 'plain' },
 //   { id: 9, name: 'High Quality Plain T Shirt Women Cotton Elastic Basic T-shirts 2021 Summer Tops Short Sleeve ', image: b9, price: 750, color: 'green', size: 'L', pattern: 'polka dot' },

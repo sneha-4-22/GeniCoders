@@ -14,16 +14,16 @@ import b10 from '../../images/men/mc10.png';
 // import b12 from '../../images/tshirts/top12.png';
 
 const tshirtData = [
-  { id: 1, name: 'Printed Pullover T-Shirt', image: b1, price: 800, color: 'red', size: 'M', pattern: 'striped' },
-  { id: 2, name: 'Solid Color Crop T-shirt 3 Pack, Casual Crew Neck Short Sleeve Top For Spring & Summer, Women\'s Clothing', image: b2, price: 1500, color: 'blue', size: 'S', pattern: 'plain' },
-  { id: 3, name: 'Ruffle Cami Top', image: b3, price: 1125, color: 'green', size: 'L', pattern: 'polka dot' },
-  { id: 4, name: 'Printed Pullover T-Shirt', image: b4, price: 2250, color: 'yellow', size: 'M', pattern: 'striped' },
-  { id: 5, name: 'Printed Pullover T-Shirt', image: b5, price: 1875, color: 'pink', size: 'S', pattern: 'plain' },
-  { id: 6, name: 'Applique Cami Top', image: b6, price: 400, color: 'purple', size: 'L', pattern: 'polka dot' },
-  { id: 7, name: 'Belted Straight Leg Pants', image: b7, price: 2800, color: 'red', size: 'M', pattern: 'striped' },
-  { id: 8, name: 'Applique Cami Top', image: b8, price: 3000, color: 'blue', size: 'S', pattern: 'plain' },
-  { id: 9, name: 'High Quality Plain T Shirt Women Cotton Elastic Basic T-shirts 2021 Summer Tops Short Sleeve ', image: b9, price: 750, color: 'green', size: 'L', pattern: 'polka dot' },
-  { id: 10, name: 'T-Shirts Women Chiffon Korean Style Summer New Fashion Design Patchwork All-Match Tops Short Sleeve Loose Solid Simple Chic, green / L', image: b10, price: 3375, color: 'yellow', size: 'M', pattern: 'striped' },
+  { id: 1, name: 'FLYDAY Imagine Vent Short Sleeve Tee Shirt', image: b1, price: 800, color: 'red', size: 'M', pattern: 'striped' },
+  { id: 2, name: 'FLYDAY Hi Relax Shirt ', image: b2, price: 1500, color: 'blue', size: 'S', pattern: 'plain' },
+  { id: 3, name: 'Classic Short Sleeve Button-Up Shirt - White / 2XL', image: b3, price: 1125, color: 'green', size: 'L', pattern: 'polka dot' },
+  { id: 4, name: 'Men Patched Detail Contrast Trim Shirt', image: b4, price: 2250, color: 'yellow', size: 'M', pattern: 'striped' },
+  { id: 5, name: 'Printed Pullover Shirt', image: b5, price: 1875, color: 'pink', size: 'S', pattern: 'plain' },
+  { id: 6, name: 'FLYDAY Imagine Vent Short Sleeve Tee Shirt', image: b6, price: 400, color: 'purple', size: 'L', pattern: 'polka dot' },
+  { id: 7, name: 'Boys Letter Graphic Contrast Trim Tee', image: b7, price: 2800, color: 'red', size: 'M', pattern: 'striped' },
+  { id: 8, name: 'Men Contrast Trim Patched Pocket Tee', image: b8, price: 3000, color: 'blue', size: 'S', pattern: 'plain' },
+  { id: 9, name: 'Men Solid Button Up Shirt', image: b9,price: 3000, color: 'blue',size: 'L', pattern: 'polka dot' },
+  { id: 10, name: 'Essential Spread Collar Casual Short Sleeve Shirt - Flint Gray Cotton Oxford - Small', image: b10, price: 3375, color: 'yellow', size: 'M', pattern: 'striped' },
 //   { id: 11, name: 'CROPPED TEE KHAKI - L', image: b11, price: 4125, color: 'pink', size: 'S', pattern: 'plain' },
 //   { id: 12, name: 'Zingj Summer Striped Knitted Sleeveless Top High Waist Navel Short Vest T-shirt Tops Tank Top Tops for Women White Corset Top White-One Size ', image: b12, price: 2125, color: 'silver', size: 'S', pattern: 'plain' },
 ];
