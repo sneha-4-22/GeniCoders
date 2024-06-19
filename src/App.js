@@ -7,6 +7,9 @@ import Navbar from './components/navbar/Navbar';
 import Beauty from './components/Beauty/Beauty';
 import Dress  from './components/Women/Dress';
 import Tops from './components/Women/Tops';
+import Sandles from './components/Footwear/Sandles';
+import Shoes from './components/Footwear/Shoes';
+import Sleeper from './components/Footwear/Sleeper';
 function App() {
   return (
     <Router>
@@ -19,6 +22,9 @@ function App() {
           <Route path="/beauty" element={<Beauty />} />
           <Route path="/dress" element={<Dress />} />
           <Route path="/tops" element={<Tops />} />
+          <Route path="/sandal" element={<Sandles />} />
+          <Route path="/shoes" element={<Shoes />} />
+          <Route path="/slippers" element={<Sleeper />} />
         </Route>
       </Routes>
     </Router>
