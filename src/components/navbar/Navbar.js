@@ -14,7 +14,7 @@ const Navbar = () => {
       <ul className="nav-links menu">
       <Dropdown label="MEN" items={['T-Shirts', 'Jeans']} />
       <Dropdown label="WOMEN" items={['Dress', 'Tops']} />
-      <Dropdown label="FOOTWEAR" items={['Slippers', 'Shoes', 'Sandals']} />
+      <Dropdown label="FOOTWEAR" items={['Slippers', 'Shoes', 'Sandal']} />
         <li><Link to="/beauty">BEAUTY</Link></li>
         <li><Link to="/accessories">ACCESSORIES</Link></li>
         <li><a href="#" className="new">STUDIO <span>NEW</span></a></li>
