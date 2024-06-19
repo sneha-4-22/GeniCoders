@@ -15,14 +15,14 @@ import b8 from '../../images/shoes/s8.png';
 // import b12 from '../../images/sandles/s12.png';
 
 const shoesData = [
-  { id: 1, name: 'Natural High Gloss Lipstick Long Lasting Moisturizing Nourishing Lip Gloss Reduce Lips Lines Plumping Serum Lip Oil Care - 04', image: b1, price: 800, color: 'red', size: 'M', pattern: 'striped' },
-  { id: 2, name: '9 Colors Eyeshadow Palette Matte Shiny EyeShadow Palette Eye Shadow Long Lasting Daily Beauty MakeUp Set Women Cosmetics 1PC, Beige', image: b2, price: 1500, color: 'blue', size: 'S', pattern: 'plain' },
-  { id: 3, name: 'Eyeshadow Pallete Shiny Diamond Pigmented Makeup Palette Cosmetic - 2', image: b3, price: 1125, color: 'green', size: 'L', pattern: 'polka dot' },
+  { id: 1, name: 'Fashion Patchwork Woman Vulcanize Shoes Casual Daily Wear Outside Black PU Zapatillas Mujer Basic Sleek Ladies Footwear Black-38', image: b1, price: 800, color: 'red', size: 'M', pattern: 'striped' },
+  { id: 2, name: ' Sportswear Womens V2K Run', image: b2, price: 1500, color: 'blue', size: 'S', pattern: 'plain' },
+  { id: 3, name: 'White padded sneakers', image: b3, price: 1125, color: 'green', size: 'L', pattern: 'polka dot' },
   { id: 4, name: 'Heartshaped Lipstick', image: b4, price: 2250, color: 'yellow', size: 'M', pattern: 'striped' },
-  { id: 5, name: 'Strawberry Rococo Embossed Blush - 03 Classic Ballet', image: b5, price: 1875, color: 'pink', size: 'S', pattern: 'plain' },
-  { id: 6, name: '3pcs 10ml Cosmetic Packaging Containers Clear Eyelash Mascara Tubes With White, Pink, And Black Caps', image: b6, price: 400, color: 'purple', size: 'L', pattern: 'polka dot' },
-  { id: 7, name: '3D Lip Gloss Transparent Holographic Lip Plumping Shiny Pearl Moisturizer Color-changing Oil Lip Makeup Plumper Nutritious Care', image: b7, price: 2800, color: 'red', size: 'M', pattern: 'striped' },
-  { id: 8, name: 'Mirror Water Lip Gloss Cherry Pink Jelly Matte Liquid Lipstick Long Lasting Moisturizing Lipgloss', image: b8, price: 3000, color: 'blue', size: 'S', pattern: 'plain' },
+  { id: 5, name: 'Air Fire Women\'s Shoes. Nike.com', image: b5, price: 1875, color: 'pink', size: 'S', pattern: 'plain' },
+  { id: 6, name: 'Sportswear Womens V7K Run', image: b6, price: 400, color: 'purple', size: 'L', pattern: 'polka dot' },
+  { id: 7, name: 'New Balance 530 - White/Black', image: b7, price: 2800, color: 'red', size: 'M', pattern: 'striped' },
+  { id: 8, name: 'Nike M2K Tekno Cool White (W) curated on LTK', image: b8, price: 3000, color: 'blue', size: 'S', pattern: 'plain' },
   // { id: 9, name: '20pcs Makeup Puff With Storage Box', image: b9, price: 3750, color: 'green', size: 'L', pattern: 'polka dot' },
   // { id: 10, name: '3PCS Makeup Puff Set+22PCS makeup brush sets Premium Synthetic hair Eyeshadow Blending brush sets cosmetics tools for face and eyes', image: b10, price: 3375, color: 'yellow', size: 'M', pattern: 'striped' },
   // { id: 11, name: '10pcs Finger Mini Makeup Puff', image: b11, price: 4125, color: 'pink', size: 'S', pattern: 'plain' },
