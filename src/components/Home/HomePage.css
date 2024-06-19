@@ -16,6 +16,7 @@ body {
     text-align: left;
     padding: 50px;
     position: relative;
+    
   }
   
   .hero-section::before {
@@ -63,7 +64,7 @@ body {
     background-color: #FF1493;
   }
   
-
+/* Categories Section */
 .categories-section {
   padding: 50px 20px;
   text-align: center;
@@ -71,28 +72,31 @@ body {
 
 .categories-section h2 {
   margin-bottom: 30px;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  color: #FF1493;
 }
 
 .categories {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
 .category {
   flex: 1 1 30%;
+  max-width: 250px;
   margin: 10px;
   padding: 20px;
-  background-color: #f9f9f9;
+  background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .category:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
 }
 
 .category img {
@@ -104,6 +108,12 @@ body {
 .category p {
   font-size: 1.2rem;
   color: #333;
+  margin-bottom: 10px;
+}
+
+.category p:last-child {
+  font-size: 1rem;
+  color: #777;
 }
 
 /* Featured Products Section */
@@ -115,28 +125,31 @@ body {
 
 .featured-products-section h2 {
   margin-bottom: 30px;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  color: #FF1493;
 }
 
 .featured-products {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
 .product-card {
   flex: 1 1 30%;
+  max-width: 250px;
   margin: 10px;
   padding: 20px;
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .product-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
 }
 
 .product-card img {
@@ -146,9 +159,17 @@ body {
 }
 
 .product-card p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #333;
   margin: 5px 0;
 }
 
-  
+.product-card p:first-of-type {
+  font-weight: bold;
+  color: #FF1493;
+}
+
+.product-card p:last-child {
+  font-size: 1rem;
+  color: #777;
+}
