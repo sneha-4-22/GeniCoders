@@ -8,6 +8,7 @@ import beautyImage from '../../images/beauty/b10.png';
 import product1 from '../../images/men/mc1.png';
 import product2 from '../../images/tshirts/top2.png';
 import product3 from '../../images/tshirts/top3.png';
+import { Link } from 'react-router-dom';
 const HomePage = () => {
   return (
     <div className="home-page">
@@ -22,21 +23,24 @@ const HomePage = () => {
       <section className="categories-section">
         <h2>Explore Our Categories</h2>
         <div className="categories">
-          <div className="category">
+        <Link to="/dress" className="category" style={{ textDecoration: 'none' }}>
             <img src={dressImage} alt="Dresses" />
             <p>Elegant Dresses</p>
             <p>Unleash your style with our chic and fashionable dresses.</p>
-          </div>
-          <div className="category">
-            <img src={accessoryImage} alt="Accessories" />
-            <p>Stylish Accessories</p>
-            <p>Complete your look with our stunning accessories.</p>
-          </div>
-          <div className="category">
-            <img src={beautyImage} alt="Beauty" />
-            <p>Beauty Essentials</p>
-            <p>Enhance your natural beauty with our premium products.</p>
-          </div>
+            </Link>
+          
+          <Link to="/accessories" className="category" style={{ textDecoration: 'none' }}>
+      <img src={accessoryImage} alt="Accessories" />
+      <p>Stylish Accessories</p>
+      <p>Complete your look with our stunning accessories.</p>
+    </Link>
+    <Link to="/beauty" className="category" style={{ textDecoration: 'none' }}>
+  
+        <img src={beautyImage} alt="Beauty" />
+        <p>Beauty Essentials</p>
+        <p>Enhance your natural beauty with our premium products.</p>
+   
+    </Link>
         </div>
       </section>
 
