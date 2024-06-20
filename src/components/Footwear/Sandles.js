@@ -10,10 +10,6 @@ import b5 from '../../images/sandles/s5.png';
 import b6 from '../../images/sandles/s6.png';
 import b7 from '../../images/sandles/s7.png';
 import b8 from '../../images/sandles/s8.png';
-// import b9 from '../../images/sandles/s9.png';
-// import b10 from '../../images/sandles/s10.png';
-// import b11 from '../../images/sandles/s11.png';
-// import b12 from '../../images/sandles/s12.png';
 
 const sandlesData = [
   { id: 1, name: 'Essentials - Arizona Slide Sandal curated on LTK', image: b1, price: 800, color: 'red', size: 'M', pattern: 'striped' },
@@ -24,10 +20,6 @@ const sandlesData = [
   { id: 6, name: 'Stylish Women\'s Cork Sandals - Black / 38', image: b6, price: 400, color: 'purple', size: 'L', pattern: 'polka dot' },
   { id: 7, name: 'Open Toe Block Heel Sandals - Ivory / 36', image: b7, price: 2800, color: 'red', size: 'M', pattern: 'striped' },
   { id: 8, name: 'New Fashion Slipper Square Toe Flat Slippers Beach Sandals Women\'s Casual Flip Flops Woman Weave Shoes Ladies Female Slides', image: b8, price: 3000, color: 'blue', size: 'S', pattern: 'plain' },
-  // { id: 9, name: '20pcs Makeup Puff With Storage Box', image: b9, price: 3750, color: 'green', size: 'L', pattern: 'polka dot' },
-  // { id: 10, name: '3PCS Makeup Puff Set+22PCS makeup brush sets Premium Synthetic hair Eyeshadow Blending brush sets cosmetics tools for face and eyes', image: b10, price: 3375, color: 'yellow', size: 'M', pattern: 'striped' },
-  // { id: 11, name: '10pcs Finger Mini Makeup Puff', image: b11, price: 4125, color: 'pink', size: 'S', pattern: 'plain' },
-  // { id: 12, name: 'Moisturizing Mirror Glass Lipstick Matte Velvet Lip Gloss Waterproof Lip Stick Longlasting Women Sexy Red Lip Makeup Cosmetic ', image: b12, price: 2125, color: 'silver', size: 'S', pattern: 'plain' },
 ];
 
 const Sandles = () => {
@@ -67,7 +59,6 @@ const Sandles = () => {
       filtered = filtered.filter(item => item.price >= min && item.price <= max);
     }
 
-    // Set filtered accessories based on applied filters
     setFilteredAccessories(filtered);
   };
 

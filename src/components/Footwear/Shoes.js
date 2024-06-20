@@ -10,10 +10,6 @@ import b5 from '../../images/shoes/s5.png';
 import b6 from '../../images/shoes/s6.png';
 import b7 from '../../images/shoes/s7.png';
 import b8 from '../../images/shoes/s8.png';
-// import b9 from '../../images/sandles/s9.png';
-// import b10 from '../../images/sandles/s10.png';
-// import b11 from '../../images/sandles/s11.png';
-// import b12 from '../../images/sandles/s12.png';
 
 const shoesData = [
   { id: 1, name: 'Fashion Patchwork Woman Vulcanize Shoes Casual Daily Wear Outside Black PU Zapatillas Mujer Basic Sleek Ladies Footwear Black-38', image: b1, price: 800, color: 'red', size: 'M', pattern: 'striped' },
@@ -24,10 +20,6 @@ const shoesData = [
   { id: 6, name: 'Sportswear Womens V7K Run', image: b6, price: 400, color: 'purple', size: 'L', pattern: 'polka dot' },
   { id: 7, name: 'New Balance 530 - White/Black', image: b7, price: 2800, color: 'red', size: 'M', pattern: 'striped' },
   { id: 8, name: 'Nike M2K Tekno Cool White (W) curated on LTK', image: b8, price: 3000, color: 'blue', size: 'S', pattern: 'plain' },
-  // { id: 9, name: '20pcs Makeup Puff With Storage Box', image: b9, price: 3750, color: 'green', size: 'L', pattern: 'polka dot' },
-  // { id: 10, name: '3PCS Makeup Puff Set+22PCS makeup brush sets Premium Synthetic hair Eyeshadow Blending brush sets cosmetics tools for face and eyes', image: b10, price: 3375, color: 'yellow', size: 'M', pattern: 'striped' },
-  // { id: 11, name: '10pcs Finger Mini Makeup Puff', image: b11, price: 4125, color: 'pink', size: 'S', pattern: 'plain' },
-  // { id: 12, name: 'Moisturizing Mirror Glass Lipstick Matte Velvet Lip Gloss Waterproof Lip Stick Longlasting Women Sexy Red Lip Makeup Cosmetic ', image: b12, price: 2125, color: 'silver', size: 'S', pattern: 'plain' },
 ];
 
 const Shoes = () => {
@@ -67,7 +59,6 @@ const Shoes = () => {
       filtered = filtered.filter(item => item.price >= min && item.price <= max);
     }
 
-    // Set filtered accessories based on applied filters
     setFilteredAccessories(filtered);
   };
 
@@ -91,7 +82,6 @@ const Shoes = () => {
         sortedAccessories.sort((a, b) => b.price - a.price);
         break;
       default:
-        // Reset to original order or default sort logic
         sortedAccessories = shoesData;
         break;
     }

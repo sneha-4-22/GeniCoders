@@ -1,4 +1,3 @@
-/* General Styling */
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
@@ -180,8 +179,8 @@ body {
   }
   
   .product-card:hover {
-    transform: translateY(-5px); /* Adjusted for a smoother hover effect */
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Enhanced box-shadow on hover */
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); 
   }
   
   .product-card img {
@@ -211,7 +210,7 @@ body {
   
 .category,
 .product-card {
-  /* Existing styles */
+ 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -220,11 +219,11 @@ body {
   transform: translateY(-10px);
   box-shadow: 0 6px 12px rgba(0,0,0,0.2);
 }
-/* Apply smooth scroll to internal links */
+
 a[href^="#"] {
   transition: all 0.3s ease;
 }
 
 a[href^="#"]:hover {
-  color: #FF1493; /* Change color on hover */
+  color: #FF1493; 
 }
