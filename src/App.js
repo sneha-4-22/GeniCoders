@@ -50,11 +50,10 @@ function App() {
   );
 }
 
-// MainLayout component to include Navbar for nested routes
 const MainLayout = () => (
   <>
     <Navbar />
-    <Outlet /> {/* Renders the nested routes */}
+    <Outlet /> 
   </>
 );
 
