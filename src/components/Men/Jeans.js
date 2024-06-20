@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import '../Accessories/Accessories.css';
+
+import { useDispatch } from 'react-redux';
+import { addCart } from '../Redux/Action';
 import b1 from '../../images/jeans/j1.png'; 
 import b2 from '../../images/jeans/j2.png';
 import b3 from '../../images/jeans/j3.png';
@@ -29,6 +32,11 @@ const jeansData = [
 ];
 
 const Jeans = () => {
+  const dispatch = useDispatch();
+
+  const handleAddToCart = (accessory) => {
+    dispatch(addCart(accessory));
+  };
   const [filtersVisible, setFiltersVisible] = useState(false);
   const [filterCriteria, setFilterCriteria] = useState({
     price: null,
@@ -157,6 +165,9 @@ const Jeans = () => {
               <p>{accessory.name}</p>
               <p>&#8377;{accessory.price}</p>
               <div className="price-tag">&#8377;{accessory.price}</div>
+              <button onClick={() => handleAddToCart(accessory)}>
+  <i className="fas fa-shopping-cart"></i> Add to Cart
+</button>
             </div>
           ))}
         </div>
