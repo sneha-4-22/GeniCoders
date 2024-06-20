@@ -1,4 +1,6 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import { BrowserRouter as Router, Routes, Route, Outlet } from 'react-router-dom';
 import LoadingScreen from './components/LoadingScreen/LoadingScreen';
 import HomePage from './components/Home/HomePage';
@@ -12,6 +14,9 @@ import Shoes from './components/Footwear/Shoes';
 import Sleeper from './components/Footwear/Sleeper';
 import Tshirts from './components/Men/Tshirts';
 import Jeans from './components/Men/Jeans';
+import Login from './components/navbar/Login';
+import Register from './components/navbar/Register';
+import ContactPage from './components/Footer/ContactPage';
 function App() {
   return (
     <Router>
@@ -29,6 +34,9 @@ function App() {
           <Route path="/slippers" element={<Sleeper />} />
           <Route path="/shirts" element={<Tshirts />} />
           <Route path="/jeans" element={<Jeans/>} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register/>} />
+          <Route path="/contact" element={<ContactPage/>} />
 
         </Route>
       </Routes>
