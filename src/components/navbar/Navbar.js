@@ -4,11 +4,7 @@ import logo from './logo.png';
 import { Link } from 'react-router-dom';
 import Dropdown from './Dropdown';
 const Navbar = () => {
-  const [isProfileDropdownOpen, setIsProfileDropdownOpen] = useState(false);
-
-  const toggleProfileDropdown = () => {
-    setIsProfileDropdownOpen(!isProfileDropdownOpen);
-  };
+ 
   return (
     <nav className="navbar">
       <div className="logo">
@@ -31,7 +27,8 @@ const Navbar = () => {
         </div>
         <a href="#"><i className="fas fa-user"></i>  <Dropdown label="" items={['Login', 'Register']} /></a>
         <a href="#"><i className="fas fa-heart"></i> Wishlist</a>
-        <a href="#"><i className="fas fa-shopping-bag"></i> Bag</a>
+        {/* <a href="#"><i className="fas fa-shopping-bag"></i> Bag</a> */}
+        <Link to="/cart"><i className="fas fa-shopping-bag"></i> Bag</Link>
       </div>
     </nav>
   );
