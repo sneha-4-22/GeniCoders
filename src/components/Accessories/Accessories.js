@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { addCart } from '../Redux/Action';
 import './Accessories.css';
 import accessory1 from '../../images/Accessories/a1.png';
 import accessory2 from '../../images/Accessories/a2.png';
@@ -28,6 +30,11 @@ const accessoriesData = [
 ];
 
 const Accessories = () => {
+  const dispatch = useDispatch();
+
+const handleAddToCart = (accessory) => {
+  dispatch(addCart(accessory));
+};
   const [filtersVisible, setFiltersVisible] = useState(false);
   const [filterCriteria, setFilterCriteria] = useState({
     price: null,
@@ -150,15 +157,18 @@ const Accessories = () => {
         </div>
 
         <div className="accessories-grid">
-          {filteredAccessories.map(accessory => (
-            <div key={accessory.id} className="accessory-item">
-              <img src={accessory.image} alt={accessory.name} />
-              <p>{accessory.name}</p>
-              <p>&#8377;{accessory.price}</p>
-              <div className="price-tag">&#8377;{accessory.price}</div>
-            </div>
-          ))}
-        </div>
+  {filteredAccessories.map((accessory) => (
+    <div key={accessory.id} className="accessory-item">
+      <img src={accessory.image} alt={accessory.name} />
+      <p>{accessory.name}</p>
+      <p>&#8377;{accessory.price}</p>
+      <div className="price-tag">&#8377;{accessory.price}</div>
+      <button onClick={() => handleAddToCart(accessory)}>
+  <i className="fas fa-shopping-cart"></i> Add to Cart
+</button>
+    </div>
+  ))}
+</div>
       </div>
     </div>
   );

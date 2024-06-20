@@ -235,3 +235,29 @@
   right: 10px;
   font-size: 14px;
 }
+
+  .accessory-item button {
+    background-color: #FF1493;
+    color: #fff;
+    border: none;
+    padding: 8px 12px; 
+    border-radius: 20px; 
+    cursor: pointer;
+    font-size: 12px; 
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    
+    justify-content: center;
+    text-align: center; 
+  }
+  
+  .accessory-item button:hover {
+    background-color: #e01384;
+  }
+  
+  .accessory-item button i {
+    margin-right: 5px;
+    font-size: 12px; 
+  }
+  

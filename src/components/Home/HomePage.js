@@ -64,19 +64,19 @@ const HomePage = () => {
           <div className="product-card">
             <img src={product1} alt="Product 1" />
             <p>Elegant Evening Gown</p>
-            <p>$25.00</p>
+            <p>&#8377;500</p>
             <p>Turn heads with this stunning evening gown, perfect for any occasion.</p>
           </div>
           <div className="product-card">
             <img src={product2} alt="Product 2" />
             <p>Luxury Handbag</p>
-            <p>$30.00</p>
+            <p>&#8377;3000</p>
             <p>Carry your essentials in style with this elegant handbag.</p>
           </div>
           <div className="product-card">
             <img src={product3} alt="Product 3" />
             <p>Radiant Skin Serum</p>
-            <p>$45.00</p>
+            <p>&#8377;400</p>
             <p>Achieve glowing skin with our advanced skin serum.</p>
           </div>
         </div>

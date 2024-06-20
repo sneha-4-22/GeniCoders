@@ -19,6 +19,7 @@ import Login from './components/navbar/Login';
 import Register from './components/navbar/Register';
 import ContactPage from './components/Footer/ContactPage';
 import Cart from './components/navbar/Cart';
+import Checkout from './components/navbar/Checkout';
 function App() {
   return (
     <Router>
@@ -41,6 +42,7 @@ function App() {
           <Route path="/register" element={<Register/>} />
           <Route path="/contact" element={<ContactPage/>} />
           <Route path="/cart" element={<Cart/>} />
+          <Route path="/checkout" element={<Checkout/>} />
         </Route>
       </Routes>
       </Provider>
