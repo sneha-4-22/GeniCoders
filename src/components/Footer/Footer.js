@@ -9,8 +9,9 @@ const Footer = () => {
           <h3>Customer Service</h3>
           <ul>
             <li><Link to="/contact">Contact Us</Link></li>
-            <li><a href="#">Sell With Us</a></li>
-            <li><a href="#">Shipping</a></li>
+            <li><Link to="/sellwithus">Sell With Us</Link></li>
+            <li><Link to="/shipping">Shipping</Link></li>
+         
           </ul>
         </div>
         <div className="footer-section">

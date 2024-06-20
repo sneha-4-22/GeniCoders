@@ -28,7 +28,9 @@ const HomePage = () => {
         <div className="hero-content">
           <h1>Discover Unbeatable Deals!</h1>
           <p>Step into the latest trends with our exclusive collections.</p>
-          <button className="shop-now-button">Shop Now</button>
+          <Link to="/dress" className="shop-now-button">
+  Shop Now
+</Link>
         </div>
         <button className="prev-slide" onClick={handlePrevSlide}>&#8249;</button>
         <button className="next-slide" onClick={handleNextSlide}>&#8250;</button>

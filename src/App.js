@@ -20,6 +20,8 @@ import Register from './components/navbar/Register';
 import ContactPage from './components/Footer/ContactPage';
 import Cart from './components/navbar/Cart';
 import Checkout from './components/navbar/Checkout';
+import SellWithUs from './components/Footer/SellWithUs';
+import Shipping from './components/Footer/Shipping';
 function App() {
   return (
     <Router>
@@ -43,6 +45,8 @@ function App() {
           <Route path="/contact" element={<ContactPage/>} />
           <Route path="/cart" element={<Cart/>} />
           <Route path="/checkout" element={<Checkout/>} />
+          <Route path="/sellwithus" element={<SellWithUs/>} />
+          <Route path="/shipping" element={<Shipping/>} />
         </Route>
       </Routes>
       </Provider>
