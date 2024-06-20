@@ -96,7 +96,6 @@
   color: #FF1493;
 }
 
-/* Menu */
 .menu {
   list-style-type: none;
   padding: 0;
@@ -121,8 +120,6 @@
   background-color: #ffd7ef;
   color: #FF1493;
 }
-
-/* Dropdown styles */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -152,7 +149,6 @@
   color: #fff;
 }
 
-/* Show dropdown on hover */
 .dropdown:hover .dropdown-content {
   display: block;
   opacity: 1;
