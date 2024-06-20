@@ -26,8 +26,8 @@ const Navbar = () => {
           <button type="submit"><i className="fas fa-search"></i></button>
         </div>
         <a href="#"><i className="fas fa-user"></i>  <Dropdown label="" items={['Login', 'Register']} /></a>
-        <a href="#"><i className="fas fa-heart"></i> Wishlist</a>
-        {/* <a href="#"><i className="fas fa-shopping-bag"></i> Bag</a> */}
+      
+      
         <Link to="/cart"><i className="fas fa-shopping-bag"></i> Bag</Link>
       </div>
     </nav>
