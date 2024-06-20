@@ -1,6 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import { Provider } from 'react-redux';
+import store from './components/Redux/store';
 import { BrowserRouter as Router, Routes, Route, Outlet } from 'react-router-dom';
 import LoadingScreen from './components/LoadingScreen/LoadingScreen';
 import HomePage from './components/Home/HomePage';
@@ -17,9 +18,11 @@ import Jeans from './components/Men/Jeans';
 import Login from './components/navbar/Login';
 import Register from './components/navbar/Register';
 import ContactPage from './components/Footer/ContactPage';
+import Cart from './components/navbar/Cart';
 function App() {
   return (
     <Router>
+      <Provider store={store}>
       <Routes>
         <Route path="/" element={<LoadingScreen />} />
         <Route element={<MainLayout />}>
@@ -37,9 +40,10 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register/>} />
           <Route path="/contact" element={<ContactPage/>} />
-
+          <Route path="/cart" element={<Cart/>} />
         </Route>
       </Routes>
+      </Provider>
     </Router>
   );
 }
