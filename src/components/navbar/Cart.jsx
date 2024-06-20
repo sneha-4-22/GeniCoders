@@ -1,20 +1,30 @@
 import React from "react";
-// import Footer from "../Footer/Footer";
 import { useSelector, useDispatch } from "react-redux";
-import { addCart,delCart } from "../Redux/Action";
+import { addCart, delCart } from "../Redux/Action";
 import { Link } from "react-router-dom";
 
 const Cart = () => {
   const state = useSelector((state) => state.handleCart);
   const dispatch = useDispatch();
 
+  const pinkColor = "#ff69b4"; // Define the desired pink color
+
   const EmptyCart = () => {
     return (
       <div className="container">
         <div className="row">
           <div className="col-md-12 py-5 bg-light text-center">
-            <h4 className="p-3 display-5">Your Cart is Empty</h4>
-            <Link to="/home" className="btn  btn-outline-dark mx-4">
+            <h4 className="p-3 display-5" style={{ color: pinkColor }}>
+              Your Cart is Empty
+            </h4>
+            <Link
+              to="/home"
+              className="btn btn-outline-dark mx-4"
+              style={{
+                color: pinkColor,
+                borderColor: pinkColor,
+              }}
+            >
               <i className="fa fa-arrow-left"></i> Continue Shopping
             </Link>
           </div>
@@ -43,12 +53,21 @@ const Cart = () => {
     });
     return (
       <>
-        <section className="h-100 gradient-custom">
+        <section
+          className="h-100 gradient-custom"
+          style={{ backgroundColor: `${pinkColor}33` }} // Light pink background
+        >
           <div className="container py-5">
             <div className="row d-flex justify-content-center my-4">
               <div className="col-md-8">
-                <div className="card mb-4">
-                  <div className="card-header py-3">
+                <div
+                  className="card mb-4"
+                  style={{ borderColor: pinkColor }} // Pink border
+                >
+                  <div
+                    className="card-header py-3"
+                    style={{ backgroundColor: pinkColor, color: "white" }} // Pink header
+                  >
                     <h5 className="mb-0">Item List</h5>
                   </div>
                   <div className="card-body">
@@ -63,7 +82,6 @@ const Cart = () => {
                               >
                                 <img
                                   src={item.image}
-                                  // className="w-100"
                                   alt={item.title}
                                   width={100}
                                   height={135}
@@ -72,11 +90,9 @@ const Cart = () => {
                             </div>
 
                             <div className="col-lg-5 col-md-6">
-                              <p>
+                              <p style={{ color: pinkColor }}>
                                 <strong>{item.title}</strong>
                               </p>
-                              {/* <p>Color: blue</p>
-                              <p>Size: M</p> */}
                             </div>
 
                             <div className="col-lg-4 col-md-6">
@@ -85,7 +101,11 @@ const Cart = () => {
                                 style={{ maxWidth: "300px" }}
                               >
                                 <button
-                                  className="btn px-3"
+                                  className="btn btn-outline-dark px-3"
+                                  style={{
+                                    color: pinkColor,
+                                    borderColor: pinkColor,
+                                  }}
                                   onClick={() => {
                                     removeItem(item);
                                   }}
@@ -93,10 +113,16 @@ const Cart = () => {
                                   <i className="fas fa-minus"></i>
                                 </button>
 
-                                <p className="mx-5">{item.qty}</p>
+                                <p className="mx-5" style={{ color: pinkColor }}>
+                                  {item.qty}
+                                </p>
 
                                 <button
-                                  className="btn px-3"
+                                  className="btn btn-outline-dark px-3"
+                                  style={{
+                                    color: pinkColor,
+                                    borderColor: pinkColor,
+                                  }}
                                   onClick={() => {
                                     addItem(item);
                                   }}
@@ -122,8 +148,14 @@ const Cart = () => {
                 </div>
               </div>
               <div className="col-md-4">
-                <div className="card mb-4">
-                  <div className="card-header py-3 bg-light">
+                <div
+                  className="card mb-4"
+                  style={{ borderColor: pinkColor }} // Pink border
+                >
+                  <div
+                    className="card-header py-3"
+                    style={{ backgroundColor: pinkColor, color: "white" }} // Pink header
+                  >
                     <h5 className="mb-0">Order Summary</h5>
                   </div>
                   <div className="card-body">
@@ -148,6 +180,11 @@ const Cart = () => {
                     <Link
                       to="/checkout"
                       className="btn btn-dark btn-lg btn-block"
+                      style={{
+                        backgroundColor: pinkColor,
+                        color: "white",
+                        borderColor: pinkColor,
+                      }}
                     >
                       Go to checkout
                     </Link>
@@ -163,13 +200,13 @@ const Cart = () => {
 
   return (
     <>
-    
       <div className="container my-3 py-3">
-        <h1 className="text-center">Cart</h1>
+        <h1 className="text-center" style={{ color: pinkColor }}>
+          Cart
+        </h1>
         <hr />
         {state.length > 0 ? <ShowCart /> : <EmptyCart />}
       </div>
-      {/* <Footer /> */}
     </>
   );
 };
