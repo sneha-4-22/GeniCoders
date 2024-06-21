@@ -34,7 +34,7 @@ const Footer = () => {
       <div className="footer-bottom">
         <p>&copy; 2024 Daisy Deals. All rights reserved.</p>
         <div className="social-icons">
-          <a href="#"><i className="fab fa-facebook-f fi"></i></a>
+          <a href="https://github.com/sneha-4-22"><i className="fab fa-github gi"></i></a>
           <a href="#"><i className="fab fa-instagram ii"></i></a>
           <a href="#"><i className="fab fa-pinterest-p pi"></i></a>
           <a href="#"><i className="fab fa-twitter ti"></i></a>
