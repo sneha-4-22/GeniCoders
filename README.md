@@ -1,5 +1,5 @@
+<h1 align="center">🌸 Daisy Deals 🌸</h1>
 
-# 🌸 Daisy Deals 🌸
 <p align="center">
   <img src="https://github.com/sneha-4-22/daisy_deals/assets/112711068/40ae1e2a-e4e3-43d7-9ebd-e865a81285e4" alt="Daisy Deals Logo" width="200" height="200">
 </p>
