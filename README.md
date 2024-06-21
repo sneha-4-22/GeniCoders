@@ -6,7 +6,7 @@
 
 <!---<h1 align="center">🌸 Daisy Deals 🌸</h1>-->
 
-Welcome to **Daisy Deals** – your one-stop shop for the best deals on the web! This cute and user-friendly web application is built with 💖 and designed to help you save money on your favorite products.
+Welcome to **Daisy Deals** – your one-stop shop for the best deals on the web! This project i made during my internship at iNeuron.This cute and user-friendly web application is built with 💖 and designed to help you save money on your favorite products.
 
 YouTube Video Demonstration - https://youtu.be/dwXJbkO6Cmo?si=vzdTW87si3-jX3GA
 
