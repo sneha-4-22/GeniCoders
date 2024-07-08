@@ -10,6 +10,7 @@ Welcome to **Daisy Deals** – your one-stop shop for the best deals on the web!
 
 YouTube Video Demonstration - https://youtu.be/dwXJbkO6Cmo?si=vzdTW87si3-jX3GA
 
+VIEW WEBSITE -> https://daisy-deals.vercel.app/
 
 ## 🌼 Table of Contents
 
