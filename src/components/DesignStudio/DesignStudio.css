@@ -1,0 +1,54 @@
+.design-studio {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .design-area {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .tshirt-display {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .design-options {
+    flex: 1;
+  }
+  
+  .color-options, .element-options {
+    margin-bottom: 20px;
+  }
+  
+  .color-button {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .element-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  .element-grid img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    padding: 5px;
+  }
+  
+  button {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }

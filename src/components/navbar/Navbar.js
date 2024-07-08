@@ -18,7 +18,7 @@ const Navbar = () => {
       <Dropdown label="FOOTWEAR" items={['Slippers', 'Shoes', 'Sandal']} />
         <li><Link to="/beauty">BEAUTY</Link></li>
         <li><Link to="/accessories">ACCESSORIES</Link></li>
-        <li><a href="#" className="new">STUDIO <span>NEW</span></a></li>
+        <li><a href="/designstudio" className="new">DESIGN &nbsp;STUDIO <span>NEW</span></a></li>
       </ul>
       <div className="nav-icons">
         <div className="search-box">
