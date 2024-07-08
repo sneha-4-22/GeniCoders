@@ -2,40 +2,82 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
   }
   
   .design-area {
     display: flex;
-    gap: 20px;
+    gap: 40px;
     margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
   .tshirt-display {
-    border: 1px solid #ccc;
-    padding: 10px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
   }
   
   .design-options {
     flex: 1;
   }
   
-  .color-options, .element-options {
-    margin-bottom: 20px;
+  .color-options,
+  .element-options {
+    margin-bottom: 30px;
   }
   
-  .color-button {
-    width: 30px;
-    height: 30px;
-    border: 1px solid #000;
-    margin-right: 10px;
+  h3,
+  h4 {
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+  .color-preview {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
     cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .color-preview:hover {
+    transform: scale(1.1);
+  }
+  
+  .color-picker-popover {
+    position: absolute;
+    z-index: 2;
+  }
+  
+  .color-picker-cover {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .element-category {
+    margin-bottom: 20px;
   }
   
   .element-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    gap: 15px;
   }
   
   .element-grid img {
@@ -43,12 +85,31 @@
     height: auto;
     cursor: pointer;
     border: 1px solid #ccc;
+    border-radius: 5px;
     padding: 5px;
+    transition: transform 0.2s;
   }
   
-  button {
-    margin-right: 10px;
-    margin-bottom: 10px;
-    padding: 5px 10px;
-    cursor: pointer;
+  .element-grid img:hover {
+    transform: scale(1.05);
   }
+  
+  .add-text-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .add-text-btn:hover {
+    background-color: #45a049;
+  }
+  

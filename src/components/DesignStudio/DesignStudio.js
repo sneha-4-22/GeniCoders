@@ -1,13 +1,15 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Canvas, Image as FabricImage, Text as FabricText } from 'fabric';
+import { SketchPicker } from 'react-color';
 import './DesignStudio.css';
+import tshirtImage from './tshirt.png';
 
 const DesignStudio = () => {
   const [canvas, setCanvas] = useState(null);
   const [tshirtColor, setTshirtColor] = useState('#FFFFFF');
+  const [showColorPicker, setShowColorPicker] = useState(false);
   const canvasRef = useRef(null);
 
-  const tshirtColors = ['#FFFFFF', '#000000', '#FF0000', '#00FF00', '#0000FF', '#FFFF00'];
   const designElements = {
     logos: ['logo1.png', 'logo2.png', 'logo3.png'],
     animes: ['anime1.png', 'anime2.png', 'anime3.png'],
@@ -17,11 +19,23 @@ const DesignStudio = () => {
 
   useEffect(() => {
     const initCanvas = new Canvas(canvasRef.current, {
-      width: 300,
-      height: 400,
-      backgroundColor: tshirtColor
+      width: 400,
+      height: 700,
     });
     setCanvas(initCanvas);
+
+    // Load T-shirt image
+    FabricImage.fromURL(tshirtImage, (img) => {
+      if (img) {
+        console.log('T-shirt image loaded successfully');
+        img.scaleToWidth(400);
+        initCanvas.setBackgroundImage(img, initCanvas.renderAll.bind(initCanvas));
+      } else {
+        console.error('Failed to load T-shirt image');
+      }
+    }, (error) => {
+      console.error('Error loading T-shirt image:', error);
+    });
 
     return () => {
       initCanvas.dispose();
@@ -30,13 +44,16 @@ const DesignStudio = () => {
 
   useEffect(() => {
     if (canvas) {
-      canvas.backgroundColor = tshirtColor;
-      canvas.renderAll();
+      const tshirtObject = canvas.backgroundImage;
+      if (tshirtObject) {
+        tshirtObject.set('fill', tshirtColor);
+        canvas.renderAll();
+      }
     }
   }, [canvas, tshirtColor]);
 
   const changeTshirtColor = (color) => {
-    setTshirtColor(color);
+    setTshirtColor(color.hex);
   };
 
   const addElement = (elementUrl) => {
@@ -64,42 +81,47 @@ const DesignStudio = () => {
 
   return (
     <div className="design-studio">
-      <h1>Design Studio</h1>
+      <h1>T-Shirt Design Studio</h1>
       <div className="design-area">
-        <div className="tshirt-display">
+        <div className="tshirt-display" style={{ border: '1px solid black', minHeight: '700px' }}>
           <canvas ref={canvasRef}></canvas>
+          <img src={tshirtImage} alt="T-shirt" style={{ width: '400px', display: 'none' }} />
         </div>
         <div className="design-options">
           <div className="color-options">
             <h3>Choose T-shirt Color</h3>
-            {tshirtColors.map((color) => (
-              <button
-                key={color}
-                className="color-button"
-                style={{ backgroundColor: color }}
-                onClick={() => changeTshirtColor(color)}
-              ></button>
-            ))}
+            <div 
+              className="color-preview" 
+              style={{ backgroundColor: tshirtColor, width: '50px', height: '50px', cursor: 'pointer' }} 
+              onClick={() => setShowColorPicker(!showColorPicker)}
+            ></div>
+            {showColorPicker && (
+              <div className="color-picker-popover">
+                <div className="color-picker-cover" onClick={() => setShowColorPicker(false)} />
+                <SketchPicker color={tshirtColor} onChange={changeTshirtColor} />
+              </div>
+            )}
           </div>
           <div className="element-options">
             <h3>Add Design Elements</h3>
             {Object.entries(designElements).map(([category, elements]) => (
-              <div key={category}>
+              <div key={category} className="element-category">
                 <h4>{category.charAt(0).toUpperCase() + category.slice(1)}</h4>
                 <div className="element-grid">
                   {elements.map((element) => (
                     <img
                       key={element}
-                      src={`/path/to/your/images/${element}`}
+                      src={`/images/${element}`}
                       alt={element}
-                      onClick={() => addElement(`/path/to/your/images/${element}`)}
+                      onClick={() => addElement(`/images/${element}`)}
+                      style={{ width: '50px', height: '50px', cursor: 'pointer' }}
                     />
                   ))}
                 </div>
               </div>
             ))}
           </div>
-          <button onClick={addCustomText}>Add Custom Text</button>
+          <button className="add-text-btn" onClick={addCustomText}>Add Custom Text</button>
         </div>
       </div>
     </div>
