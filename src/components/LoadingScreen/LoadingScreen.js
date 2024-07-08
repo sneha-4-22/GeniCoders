@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './LoadingScreen.css';
-import logo from './daisy_deals.png'; 
+import logo from './logo.png'; 
 const LoadingScreen = () => {
   const navigate = useNavigate();
 
