@@ -1,3 +1,4 @@
+
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Provider } from 'react-redux';
@@ -14,6 +15,7 @@ import Sandles from './components/Footwear/Sandles';
 import Shoes from './components/Footwear/Shoes';
 import Sleeper from './components/Footwear/Sleeper';
 import Tshirts from './components/Men/Tshirts';
+
 import Jeans from './components/Men/Jeans';
 import Login from './components/navbar/Login';
 import Register from './components/navbar/Register';
@@ -23,6 +25,7 @@ import Checkout from './components/navbar/Checkout';
 import SellWithUs from './components/Footer/SellWithUs';
 import Shipping from './components/Footer/Shipping';
 import DesignStudio from './components/DesignStudio/DesignStudio';
+
 function App() {
   return (
     <Router>
