@@ -177,7 +177,7 @@ const Customizer = () => {
         style={{ width: `${tabWidth}px` }}
         {...slideAnimation('left')}
       >
-        <div className='min-h-screen bg-gray-500 relative'>
+        <div className='min-h-screen bg-pink-300 relative'>
           <div
             className='editortabs-container'
             style={{ width: `${tabWidth}px` }}
