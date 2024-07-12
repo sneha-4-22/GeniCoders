@@ -23,7 +23,7 @@ const ImageFileSelector = ({ file, setFile, readFile, tabWidth }) => {
 				/>
 				<label htmlFor='file-upload' className='filepicker-label text-white'>
 				Upload
-					<img src={downloadIcon} alt='logo' className='w-4 h-4 ml-[5px]' />
+					<img src={downloadIcon} alt='logo' className='w-6 h-6 ml-[5px]' />
 				</label>
 				<div className='mt-2 text-white text-[13px] truncate'>
   {file === '' ? 'File not chosen' : file.name}
