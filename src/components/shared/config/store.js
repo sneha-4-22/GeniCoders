@@ -6,7 +6,7 @@ import { proxy } from 'valtio'
 
 import { MarkFormelle } from '../../public'
 const state = proxy({
-  color: '#fff',
+  color: '#504C4C',
   currentSize: 'XXL',
   currentRotate: false,
   isLogoTexture: true,
@@ -15,6 +15,8 @@ const state = proxy({
   logoDecal: MarkFormelle,
   fullDecal: MarkFormelle,
   currentClothing: localStorage.getItem('currentClothing') || 'shirt',
+  textElements: [],
+  currentTextElement: null,
 })
 
 export default state
