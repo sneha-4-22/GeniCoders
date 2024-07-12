@@ -17,7 +17,7 @@ import boxerIcon from './icons/boxer_icon.png'
 import pantsIcon from './icons/pants_icon.png'
 import socksIcon from './icons/socks_icon.png'
 import rotationIcon  from './icons/rotation_icon.png'
-
+import textIcon from './icons/textIcon.png'
 // 3D Models
 import hoodieModel from './3dModel/hoodie.glb'
 import boxerModel from './3dModel/boxer.glb'
@@ -47,4 +47,5 @@ export {
 	shirtModel,
 	socksModel,
 	hoodieModel,
+	textIcon,
 }

@@ -12,6 +12,7 @@ import {
 	socksIcon,
 	shirtIcon,
 	swatch,
+	textIcon
 } from '../../public'
 
 export const ClothesChoice = [
@@ -50,6 +51,10 @@ export const EditorTabs = [
 		name: 'sizepicker',
 		icon: sizePicker,
 	},
+	{
+		name: "texteditor",
+		icon: textIcon,  // You'll need to import or create this icon
+	  },
 ]
 
 export const FilterTabs = [

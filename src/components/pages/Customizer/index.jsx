@@ -9,7 +9,7 @@ import ColorSelector from '../../features/ColorSelector'
 import ImageFileSelector from '../../features/ImageFileSelector'
 import SizePicker from '../../features/SizePicker'
 import Tab from '../../features/Tab'
-
+import TextEditor from '../../features/TextEditor'
 // Shared -> Config; Libs
 import state from '../../shared/config/store'
 import { slideAnimation } from '../../shared/config/motion'
@@ -72,6 +72,7 @@ const Customizer = () => {
             readFile={readFile}
             tabWidth={tabWidth}
           />
+      
         )
       case 'sizepicker':
         return (
@@ -83,6 +84,8 @@ const Customizer = () => {
             tabWidth={tabWidth}
           />
         )
+        case 'texteditor':
+        return <TextEditor tabWidth={tabWidth} />
       default:
         return null
     }
@@ -225,6 +228,21 @@ const Customizer = () => {
           />
         ))}
       </motion.div>
+      {snap.textElements.map((textElement) => (
+        <div
+          key={textElement.id}
+          style={{
+            position: 'absolute',
+            left: textElement.position.x,
+            top: textElement.position.y,
+            fontFamily: textElement.font,
+            fontSize: `${textElement.fontSize}px`,
+            color: textElement.color,
+          }}
+        >
+          {textElement.content}
+        </div>
+      ))}
     </>
   )
 }
