@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,600;1,900&display=swap');
+@import url('https://rsms.me/inter/inter.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: 'Inter', sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: 'Inter var', sans-serif;
+  }
+}
+
+.no-select {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.app {
+  @apply relative w-full  h-screen overflow-hidden bg-pink-100;
+}
+
+
+
+.head-text {
+  @apply lg:text-[7rem] text-[3.7rem] xl:leading-[8rem] leading-[7rem] font-black text-pink-700;
+}
+
+.paragraph-text {
+  @apply lg:text-[1rem] text-[0.96rem] font-medium text-pink-600 max-w-md;
+}
+
+.editortabs-container {
+  @apply glassmorphism w-96 border-[2px]  border-pink-400 rounded-lg flex flex-shrink justify-center items-center py-4 gap-4 relative;
+}
+
+.filtertabs-container {
+  @apply absolute z-10 bottom-[10%]  right-0 left-0 w-full flex justify-center items-center flex-wrap gap-4;
+}
+
+.clothestabs-container {
+  @apply absolute z-10 bottom-[50%] left-[95%] w-full flex flex-col flex-wrap gap-4;
+}
+
+.filepicker-container {
+  @apply absolute left-0 top-24 glassmorphism p-2 pl-1 h-[220px] flex flex-col rounded-md border-pink-400;
+  transition: width 0.2s ease;
+}
+
+.filepicker-label {
+  @apply border flex items-center border-pink-400 py-1.5 px-2 rounded-md text-[15px] cursor-pointer w-fit text-pink-600;
+}
+
+.tab-btn {
+  @apply w-14 h-14 flex justify-center items-center cursor-pointer select-none bg-pink-400;
+}
+
+.resizer {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 10px;
+  height: 90%;
+  cursor: ew-resize;
+  background-color: transparent;
+}
+
+.glassmorphism {
+  background: rgba(221, 48, 158, 0.752); 
+  box-shadow: 0 2px 30px 0 rgba(208, 139, 213, 0.795); 
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(234, 74, 202, 0.716); 
+}
+
+
+input[type='file'] {
+  z-index: -1;
+  position: absolute;
+  opacity: 0;
+}
