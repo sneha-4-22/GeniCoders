@@ -228,21 +228,29 @@ const Customizer = () => {
           />
         ))}
       </motion.div>
+      
+      <div className="absolute top-0 left-0 w-full h-full pointer-events-none z-5000">
       {snap.textElements.map((textElement) => (
         <div
           key={textElement.id}
           style={{
             position: 'absolute',
-            left: textElement.position.x,
-            top: textElement.position.y,
+            left: `${textElement.position.x}%`,
+            top: `${textElement.position.y}%`,
             fontFamily: textElement.font,
             fontSize: `${textElement.fontSize}px`,
             color: textElement.color,
+            fontWeight: textElement.bold ? 'bold' : 'normal',
+            fontStyle: textElement.italic ? 'italic' : 'normal',
+            textDecoration: textElement.underline ? 'underline' : 'none',
+            textAlign: textElement.alignment,
+            transform: 'translate(-50%, -50%)',
           }}
         >
           {textElement.content}
         </div>
       ))}
+      </div>
     </>
   )
 }
