@@ -2,7 +2,7 @@
 import { useEffect, useState, useCallback } from 'react'
 
 // React-Three
-import { Center, Environment } from '@react-three/drei'
+import { Center, Environment ,Text} from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import ModelViewControl from '../../features/ModelViewControl'
 

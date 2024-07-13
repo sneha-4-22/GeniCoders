@@ -1,8 +1,6 @@
-// state.js
 
 import { proxy } from 'valtio'
 
-// Image
 
 import { MarkFormelle } from '../../public'
 const state = proxy({
