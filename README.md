@@ -9,6 +9,7 @@ Welcome to the Gen Z edition of the Myntra Clone! This project was created as pa
 
  ## Try Application:
  [Myntra_HACK-FOR-SHE](https://daisy-deals.vercel.app/)
+
 ## Features
 
 ### Navbar
