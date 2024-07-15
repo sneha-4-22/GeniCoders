@@ -1,113 +1,67 @@
-<p align="center">
-  <img src="https://github.com/sneha-4-22/daisy_deals/assets/112711068/40ae1e2a-e4e3-43d7-9ebd-e865a81285e4" alt="Daisy Deals Logo" width="200" height="200">
-</p>
 
 
+# Myntra Clone - Gen Z Edition 
+## Built By - Sneha Kumari and Shivani Sharma 
 
-<!---<h1 align="center">🌸 Daisy Deals 🌸</h1>-->
+Welcome to the Gen Z edition of the Myntra Clone! This project was created as part of the Hack for She event organized by Myntra. The application includes several unique features tailored to the needs and preferences of the Gen Z audience.
 
-Welcome to **Daisy Deals** – your one-stop shop for the best deals on the web! This project i made during my internship at iNeuron.This cute and user-friendly web application is built with 💖 and designed to help you save money on your favorite products.
+## Features
 
-YouTube Video Demonstration - https://youtu.be/dwXJbkO6Cmo?si=vzdTW87si3-jX3GA
+### Navbar
+The navigation bar includes:
+- **Logo**: A clickable logo that redirects to the home page.
+- **Dropdown Menus**: Categories for Men, Women, and Footwear with subcategories.
+- **Links**: Direct links to Beauty, Accessories, Design Studio, Shop by Themes, and the Fashion Chatbot.
+- **Search Box**: A search bar to find products, brands, and more.
+- **User and Cart Icons**: Icons for user login/register and shopping bag.
 
-VIEW WEBSITE -> https://daisy-deals.vercel.app/
+### Shop by Themes
+This section allows users to shop by three exciting themes:
+- **Anime**
+- **Barbie**
+- **Ethnic**
 
-## 🌼 Table of Contents
+Each theme offers a unique selection of products that cater to different styles and preferences.
 
-- [Features](#-features)
-- [Installation](#-installation)
-- [Usage](#-usage)
-- [Contributing](#-contributing)
-- [License](#-license)
-- [Contact](#-contact)
+### Design Studio
+In the Design Studio, users can unleash their creativity by designing custom apparel. The studio includes 3D models of various clothing items such as:
+- **Underwear**
+- **Hoodie**
+- **Socks**
+- **T-shirt**
+- **Pants**
 
-## ✨ Features
+Users can:
+- Upload logos and graphics.
+- Move and rotate logos.
+- Add or delete logos on the front and back of the apparel.
 
-- 🌟 **Browse Deals:** Discover a wide range of products and their best deals.
-- 🔍 **Search Functionality:** Quickly find specific products.
-- 🔒 **User Authentication:** Secure login and registration system.
-- 💖 **Wishlist:** Save your favorite deals for later.
-- 🔔 **Notifications:** Stay updated with new deals and updates.
+### Fashion Chatbot
+The Fashion Chatbot, powered by MindsDB and GPT-3.5 Turbo, provides personalized fashion advice. Users can ask the chatbot for style tips, outfit recommendations, and more.
 
-## 📥 Installation
+## Installation
 
-### Prerequisites
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/GeniCoders.git
+   cd GeniCoders
+   ```
 
-Make sure you have the following installed:
+2. Install the dependencies:
+   ```bash
+   npm install
+   ```
 
-- [Node.js](https://nodejs.org/) (v12.x or later)
-- [npm](https://www.npmjs.com/) (v6.x or later) 
+3. Start the development server:
+   ```bash
+   npm start
+   ```
 
-### Clone the Repository
+4. Open your browser and navigate to `http://localhost:3000` to view the application.
 
-```bash
-git clone https://github.com/yourusername/daisy-deals.git
-cd daisy-deals
-```
+## Contributing
+We welcome contributions! Please fork the repository and submit a pull request with your changes.
 
-### Install Dependencies
+## License
+This project is licensed under the MIT License.
 
-Using npm:
-
-```bash
-npm install
-```
-
-`
-
-## 🚀 Usage
-
-### Running the Development Server
-
-To start the development server, run:
-
-Using npm:
-
-```bash
-npm start
-```
-
-
-This will start the app on [http://localhost:3000](http://localhost:3000).
-
-### Building for Production
-
-To create a production build, run:
-
-Using npm:
-
-```bash
-npm run build
-```
-
-
-The build artifacts will be stored in the `build` directory.
-
-
-
-## 🤝 Contributing
-
-Contributions are welcome! Please follow these steps to contribute:
-
-1. 🍴 Fork the repository.
-2. 🌸 Create a new branch (`git checkout -b feature/your-feature-name`).
-3. ✨ Make your changes.
-4. 💖 Commit your changes (`git commit -m 'Add some feature'`).
-5. 🚀 Push to the branch (`git push origin feature/your-feature-name`).
-6. 🌼 Open a pull request.
-
-Please make sure your code adheres to our coding standards and includes appropriate tests.
-
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 📧 Contact
-
-For any questions or feedback, please contact:
-
-- **Sneha Kumari**
-- **Email:** snehakumari64445@gmial.com
-- **GitHub:** [sneha-4-22](https://github.com/sneha-4-22)
-
----
