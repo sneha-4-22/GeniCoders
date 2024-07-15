@@ -1,3 +1,33 @@
+<<<<<<< HEAD
+=======
+
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Provider } from 'react-redux';
+import store from './components/Redux/store';
+import { BrowserRouter as Router, Routes, Route, Outlet } from 'react-router-dom';
+import LoadingScreen from './components/LoadingScreen/LoadingScreen';
+import HomePage from './components/Home/HomePage';
+import Accessories from './components/Accessories/Accessories';
+import Navbar from './components/navbar/Navbar';
+import Beauty from './components/Beauty/Beauty';
+import Dress  from './components/Women/Dress';
+import Tops from './components/Women/Tops';
+import Sandles from './components/Footwear/Sandles';
+import Shoes from './components/Footwear/Shoes';
+import Sleeper from './components/Footwear/Sleeper';
+import Tshirts from './components/Men/Tshirts';
+
+import Jeans from './components/Men/Jeans';
+import Login from './components/navbar/Login';
+import Register from './components/navbar/Register';
+import ContactPage from './components/Footer/ContactPage';
+import Cart from './components/navbar/Cart';
+import Checkout from './components/navbar/Checkout';
+import SellWithUs from './components/Footer/SellWithUs';
+import Shipping from './components/Footer/Shipping';
+import DesignStudio from './components/DesignStudio/DesignStudio';
+>>>>>>> 3bfad8911a354478f3569e07d43b73b0b2f7ac75
 
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -52,7 +82,10 @@ function App() {
           <Route path="/sellwithus" element={<SellWithUs/>} />
           <Route path="/shipping" element={<Shipping/>} />
           <Route path="/designstudio" element={<DesignStudio/>} />
+<<<<<<< HEAD
           <Route path="/fashionchatbot" element={<FashionChatbot/>} />
+=======
+>>>>>>> 3bfad8911a354478f3569e07d43b73b0b2f7ac75
         </Route>
       </Routes>
       </Provider>
