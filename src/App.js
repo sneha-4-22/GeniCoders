@@ -25,6 +25,7 @@ import Checkout from './components/navbar/Checkout';
 import SellWithUs from './components/Footer/SellWithUs';
 import Shipping from './components/Footer/Shipping';
 import DesignStudio from './components/DesignStudio/DesignStudio';
+import Chatbot from './components/FashionChatbot/Chatbot';
 function App() {
   return (
     <Router>
@@ -51,7 +52,7 @@ function App() {
           <Route path="/sellwithus" element={<SellWithUs/>} />
           <Route path="/shipping" element={<Shipping/>} />
           <Route path="/designstudio" element={<DesignStudio/>} />
-         
+          <Route path="/chatbot" element={<Chatbot/>} />
         </Route>
       </Routes>
       </Provider>
