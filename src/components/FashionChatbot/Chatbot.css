@@ -2,9 +2,8 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: #FFF0F5;  
+    background-color: #FFF0F5;
     font-family: Arial, sans-serif;
-    
   }
   
   .chatbot {
@@ -14,7 +13,7 @@ body, html {
     display: flex;
     flex-direction: column;
     margin-left: 60px;
-    background-color: #ffd3df; 
+    background-color: #ffd3df;
   }
   
   .chat-window {
@@ -30,12 +29,13 @@ body, html {
     margin: 8px 0;
     max-width: 80%;
     border-radius: 20px;
-    font-size: 14px; 
+    font-size: 14px;
     line-height: 1.5;
+    word-wrap: break-word;
   }
   
   .chat-message.user {
-    background-color: #be218ac8;  
+    background-color: #be218ac8;
     color: #ffffff;
     float: right;
     clear: both;
@@ -43,15 +43,11 @@ body, html {
   }
   
   .chat-message.assistant {
-    background-color: #FF69B4;  
+    background-color: #FF69B4;
     color: white;
     float: left;
     clear: both;
     border-bottom-left-radius: 0;
-  }
-  
-  .chat-message span {
-    word-wrap: break-word;
   }
   
   .chat-input {
@@ -60,6 +56,7 @@ body, html {
     border-radius: 25px;
     overflow: hidden;
     box-shadow: 0 2px 10px rgba(255, 182, 193, 0.2);
+    margin-top: 20px; /* Added margin to separate from chat messages */
   }
   
   .chat-input input {
@@ -67,19 +64,38 @@ body, html {
     padding: 15px 20px;
     border: none;
     outline: none;
-    font-size: 16px;  
+    font-size: 16px;
   }
   
   .chat-input button {
     padding: 15px 25px;
     border: none;
-    background-color: #FF1493;  
+    background-color: #FF1493;
     color: white;
-    font-size: 16px;  
+    font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s;
   }
   
   .chat-input button:hover {
-    background-color: #FF69B4; 
+    background-color: #FF69B4;
   }
+  
+  /* Styling for the welcome message */
+  .welcome-message {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 8px 0;
+    max-width: 80%;
+    border-radius: 20px;
+    background-color: #FF69B4;
+    color: white;
+    float: left;
+    clear: both;
+    border-bottom-left-radius: 0;
+    font-size: 14px;
+    line-height: 1.5;
+    word-wrap: break-word;
+    margin-bottom: 20px; 
+  }
+  

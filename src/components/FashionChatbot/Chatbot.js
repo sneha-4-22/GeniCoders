@@ -5,6 +5,7 @@ import './Chatbot.css';
 const Chatbot = () => {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState('');
+  const [showWelcomeMessage, setShowWelcomeMessage] = useState(true); // State to manage the welcome message
   const messagesEndRef = useRef(null);
 
   const scrollToBottom = () => {
@@ -15,6 +16,11 @@ const Chatbot = () => {
 
   const handleSendMessage = async () => {
     if (input.trim() === '') return;
+
+    // Hide welcome message when user sends the first message
+    if (showWelcomeMessage) {
+      setShowWelcomeMessage(false);
+    }
 
     const userMessage = { role: 'user', content: input };
     setMessages([...messages, userMessage]);
@@ -33,6 +39,11 @@ const Chatbot = () => {
   return (
     <div className="chatbot">
       <div className="chat-window">
+        {showWelcomeMessage && (
+          <div className="chat-message assistant">
+            <span>Welcome! How can I assist you today?</span>
+          </div>
+        )}
         {messages.map((msg, index) => (
           <div key={index} className={`chat-message ${msg.role}`}>
             <span>{msg.content}</span>
