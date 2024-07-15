@@ -19,6 +19,7 @@ const Navbar = () => {
         <li><Link to="/beauty">BEAUTY</Link></li>
         <li><Link to="/accessories">ACCESSORIES</Link></li>
         <li><a href="/designstudio" className="new">DESIGN &nbsp;STUDIO <span>NEW</span></a></li>
+        <li><a href="https://shivani-sharma-23.github.io/Myntra_hackthon/Themes/">SHOP BY THEMES</a></li>
       </ul>
       <div className="nav-icons">
         <div className="search-box">
