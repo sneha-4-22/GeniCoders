@@ -14,13 +14,13 @@ const Navbar = () => {
       </div>
       <ul className="nav-links menu">
       <Dropdown label="Men" items={['Shirts', 'Jeans']} />
-      <Dropdown label="Women" items={['Dress', 'Tops']} />
+      <Dropdown label="Women" items={['Dress', 'Tops','Beauty','Accessories']} />
       <Dropdown label="Footwear" items={['Slippers', 'Shoes', 'Sandal']} />
-        <li><Link to="/beauty">Beauty</Link></li>
-        <li><Link to="/accessories">Accessories</Link></li>
+       
         <li><a href="/designstudio" className="new">Design &nbsp;Studio <span>NEW</span></a></li>
         <li><a href="https://shivani-sharma-23.github.io/Myntra_hackthon/Themes/">Shop by Themes</a></li>
         <li><Link to="/chatbot">Fashion Chatbot</Link></li>
+        <li><a href="https://shivani-sharma-23.github.io/Myntra_hackathon_market_tour/index.html">Local Market Tour</a></li>
         <li><a href="https://myntra-virtual-trial-room.my.canva.site/">Try On</a></li>
       </ul>
       <div className="nav-icons">
