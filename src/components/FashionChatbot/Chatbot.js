@@ -17,7 +17,6 @@ const Chatbot = () => {
   const handleSendMessage = async () => {
     if (input.trim() === '') return;
 
-    // Hide welcome message when user sends the first message
     if (showWelcomeMessage) {
       setShowWelcomeMessage(false);
     }
